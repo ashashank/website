@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div class="date postdate">
+  {{post.date}}
+  </div>
+  <div class="container">
+  <div class="jumbotron">
+  <h1 class="display-4" style="text-align:center">{{post.name}} {{post.lname}}</h1>
+  <p style="text-align:center">{{post.organ}} <br> {{post.job}}<br>{{post.city}}</p><hr class="my-4">
+  <p class="postcontent">If you could break any world record which one would it be during this lockdown? <br>{{post.name}} : {{post.q1|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">What’s a story – from a book, a movie, an article, a conversation – that you’ve been gripped by recently? Why did it capture you? <br>{{post.name}} : {{post.q2|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">What is your nickname/alter-ego  for Covid-19 ? <br>{{post.name}} : {{post.q3|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">Coffee or Tea? <br>{{post.name}} : {{post.q4|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">What would the title of your Autobiography be? <br>{{post.name}} : {{post.q5|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">What would be the most surprising scientific discovery imaginable?	<br>{{post.name}} : {{post.q6|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">Describe your Quarantine with a Movie Name or Rewrite movie titles so they would follow quarantine regulations. <br>{{post.name}} : {{post.q7|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">Do you think the situation is acting as a social leveller, or making inequalities more apparent?
+                        Is  this Social distancing bringing us together since we are all fighting a common enemy ? <br>{{post.name}} : {{post.q8|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">If you could write a letter to yourself in future , what would you say? <br>{{post.name}} : {{post.q9|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">What do you hope we all learn or take away from this experience? <br>{{post.name}} : {{post.q10|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">What keeps you motivated during tough times ? As a leader How would you motivate people around you ? <br>{{post.name}} : {{post.q11|safe|linebreaksbr}}</p><hr class="my-3">
+  <p class="postcontent">What is your Philosophy of Life for the world as an inspirational quote ? <br>{{post.name}} : {{post.q12|safe|linebreaksbr}}</p>
+  </div>
+  </div>
+
+
+{% endblock %}

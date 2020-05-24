@@ -1,0 +1,38 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{% load static %}
+<div>
+<div class="wrapper j3">
+    <div class="page-header section-dark" style="background-image: url('{% static 'media/antoine-barres.jpg' %}')">
+        <div class="filter"></div>
+    <div class="content-center">
+      <div class="container">
+        <div class="title-brand">
+          <h1 class="presentation-title">Hello World</h1>
+          <div class="fog-low">
+            <img src="{% static 'media/fog-low.png' %}" alt="">
+          </div>
+          <div class="fog-low right">
+            <img src="{% static 'media/fog-low.png' %}" alt="">
+          </div>
+    </div>
+        <div class="moving-clouds" style="background-image: url('{% static 'media/clouds.png' %}'); ">
+        </div>
+  </div>
+</div>
+</div>
+<div class="container">
+  <br>
+  <br>
+  <p style="font-family: 'Annie Use Your Telescope', cursive;font-size:23px;">It all began with a Simple Hello World. I entered the world of coding back in 2010 starting with C , C++.
+      Also for some Micro Controller Projects during Engineering I have printed Hello World on LED displays using Embedded C.
+      And then while working in IT came across Hello World in COBOL on Mainframes which is older than C.Now here in Germany
+      it feels almost magical with Hello World in Python.   </p>
+  <p style="font-family: 'Annie Use Your Telescope', cursive;font-size:23px;">Have learnt and worked with Backend Technologies I was always curious about exploring the Frontend. Afterall however complex
+  logic being developed at the Backend it is always the Frontend that attracts the User. This quarantine period gave me the time and
+patience to explore Full Stack Web development connecting frontend and backend combining all together every logic behind all the Hello Worlds.
+Although today we have ready to use tools , apps and templates to develop a website , I have used pure coding behind every pixel that appears on
+this website. HTML , CSS , Bootstrap , Javascript in the frontend and Python Django organising entire website in the Backend. </p>
+</div>
+
+{% endblock %}

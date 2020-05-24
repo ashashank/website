@@ -1,0 +1,37 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div class="centerstage">
+<div class="container">
+<div class="jumbotron text3">
+<h1 class="display-4">{Quaran-Team}</h1>
+<h2 class="lead">This Pandemic have brought whole of Humanity to hault.But despite of the tough times
+                 we have been all together fighting this invisible enemy.We have seen real life Superheroes
+                  working in the frontline in the form of Healthcare workers , Police force , Government officials and all
+                other essential service workers.I am sure this contribution will be recorded in history and it will inspire us
+                 for years to come. </h2>
+<hr class="my-3">
+<p class="lead"> We have been reading articles and interviews of Quarantine routines of Public figures.I thought of having a record of Quarantine experiences
+of people I know.We have been through this together and I am sure we will all be responsibe in making life better , happier and healthier on our planet
+ than  it was before the Pandemic.Please share your experience through this small interview.</p>
+<a class="btn btn-primary btn-lg" href="{% url 'post_form' %}" role="button">Quaran-Team Interview!</a>
+</div>
+</div>
+
+
+  {% for post in post_list %}
+  <div class="POST">
+    <div class="container">
+    <a href="{% url 'post_detail' pk=post.pk %}"style="text-decoration:none">
+    <div class="jumbotron text1">
+    <h1 class="display-4" style="text-align:left">{{post.name}} {{post.lname}} </h1>
+    <h2 class="display-4 text2" style="text-align:left;float:left;">{{post.job}} | {{post.organ}} | {{post.city}}</h2>
+    <hr style="clear:both;"/>
+    <h3  class="display-4 text2" style="text-align:center;">"{{post.q12|safe}}"</h3>
+  </div>
+  </a>
+  </div>
+  </div>
+  {% endfor %}
+
+</div>
+{% endblock %}
